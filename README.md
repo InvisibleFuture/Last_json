@@ -19,6 +19,22 @@ GET /user
 POST /user
 新增用户(通常只允许管理员手动创建用户)
 
+PATCH /user-uid
+```javascript
+import md5 from 'md5'
+
+fetch('/user-1.htm', {
+  method: 'PATCH',
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({
+    password: md5('新密码'), // 修改密码
+    username: '新用户名',     // 修改昵称
+    emotional: '个性签名/状态', // 修改签名
+  }),
+}).then(Response => Response.json()).then(data => {
+  console.log(data)
+})
+```
 
 
 主题:
@@ -28,6 +44,9 @@ POST /user
 评论:
 
 
+
+[xiunophp 文档](http://eue.cc/doc/125/)
+[xiunobbs 文档](https://www.yuque.com/xiand/xiunobbs)
 
 xiuno接口开发文档				
 序号	接口名称	功能说明	类似功能插件	备注
