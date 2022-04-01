@@ -7,6 +7,7 @@ empty($_user) AND message(-1, "用户不存在");
 switch ($method) {
   case 'POST':
     // 向此用户添加什么..? 上传头像?
+    break;
   case 'PATCH':
     // 如果修改密码
     $password = param('password');
@@ -20,7 +21,7 @@ switch ($method) {
 
     // 如果修改用户名
     // 如果修改签名
-
+    break;
   default:
     // 是 GET, 向下放行
 }

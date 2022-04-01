@@ -3,6 +3,7 @@
   "brief": "通过 JSON 返回 AJAX 请求的数据，可以用作 APP 接口制作。",
   "version": "1.0",
   "bbs_version": "4.0.2",
+  "uid": "0",
   "username": "觉",
   "installed": 1,
   "enable": 1,
